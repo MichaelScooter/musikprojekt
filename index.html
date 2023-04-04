@@ -3,19 +3,135 @@
 <head>
 	<meta charset="utf-8">
 	
-	<title>Sigende titel</title>
+	<title>Mette og Marting - Koncerter</title>
 	
 	<meta name="robots" content="All">
 	<meta name="author" content="Udgiver">
 	<meta name="copyright" content="Information om copyright">
-	
+
+	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-<div class="container-fluid">gfgf</div>
+
+<nav class="navbar navbar-expand-lg bg-light fixed-top">
+	<div class="container-fluid px-lg-5">
+		<a class="navbar-brand" href="#">Navbar</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						Dropdown
+					</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled">Disabled</a>
+				</li>
+			</ul>
+			<button class="btn btn-primary" type="submit">Koncerter</button>
+		</div>
+	</div>
+</nav>
+
+<div class="container-fluid g-0 d">
+	<div>
+		<!-- Video Header MOBIL- Start -->
+		<div class="position-relative d-lg-none">
+			<video autoplay muted loop class="w-100">
+				<source src="video/lille_pige.mp4" type="video/mp4">
+			</video>
+
+			<div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark opacity-75">
+				<div class="text-start row">
+					<h1 class="text-white">Mette & Martin<br>
+						Koncerter med FÆLLESSANG
+					</h1>
+					<p class="lead text-white">Lead tekst her</p>
+					<div>
+						<button type="button" class="btn btn-primary">Primary</button>
+						<button type="button" class="btn btn-secondary">Secondary</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Video Header Computer - Start -->
+		<div class="position-relative d-none d-lg-block">
+			<video autoplay muted loop class="w-100">
+				<source src="video/lille_pige.mp4" type="video/mp4">
+			</video>
+
+			<div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark opacity-75">
+				<div class="text-start row">
+					<h1 class="text-white">Mette & Martin<br>
+						Koncerter med FÆLLESSANG
+					</h1>
+					<p class="lead text-white">Lead tekst her</p>
+					<div>
+						<button type="button" class="btn btn-primary">Primary</button>
+						<button type="button" class="btn btn-secondary">Secondary</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- 3 bokse - Start -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 mb-5 justify-content-center align-items-center text-center position-relative">
+					<div class="position-relative top-0 start-50 translate-middle">
+						<div class="bg-white rounded border-bottom border-primary border-4 shadow">
+							<i class="btn-social bg-primary rounded-circle position-absolute top-0 start-50 translate-middle fa-regular fa-face-smile fa-2x text-white p-3" style="z-index: 2;"></i>
+							<h3 class="pt-5">
+								 Glæde</h3>
+							<p class="lead px-3 pb-2">Vi ønsker at skabe glæde og nærvær<br>..fgfgfgf dfdgd ggdgd</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-5 justify-content-center align-items-center text-center position-relative">
+					<div class="position-relative top-0 start-50 translate-middle">
+						<div class="bg-white rounded border-bottom border-secondary border-4 shadow">
+							<i class="btn-social bg-secondary rounded-circle position-absolute top-0 start-50 translate-middle fa-regular fa-face-smile fa-2x text-white p-3" style="z-index: 2;"></i>
+							<h3 class="pt-5">
+								Glæde</h3>
+							<p class="lead px-3 pb-2">Vi ønsker at skabe glæde og nærvær<br>..fgfgfgf dfdgd ggdgd</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-5 justify-content-center align-items-center text-center position-relative">
+					<div class="position-relative top-0 start-50 translate-middle">
+						<div class="bg-white rounded border-bottom border-farve3 border-4 shadow">
+							<i class="btn-social bg-farve3 rounded-circle position-absolute top-0 start-50 translate-middle fa-regular fa-face-smile fa-2x text-white p-3" style="z-index: 2;"></i>
+							<h3 class="pt-5">
+								Glæde</h3>
+							<p class="lead px-3 pb-2">Vi ønsker at skabe glæde og nærvær<br>..fgfgfgf dfdgd ggdgd</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 
 
