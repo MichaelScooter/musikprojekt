@@ -11,42 +11,44 @@
 
 	<script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-lg bg-light fixed-top">
+<nav class="navbar navbar-expand-lg bg-white fixed-top">
 	<div class="container-fluid px-lg-5">
-		<a class="navbar-brand" href="#">Navbar</a>
+		<a class="navbar-brand text-farve5" href="#">Navbar</a>
+		</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				<li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="#">Home</a>
+					<a class="nav-link active" aria-current="page" href="#">Forside</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Link</a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-						Dropdown
-					</a>
-					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="#">Action</a></li>
-						<li><a class="dropdown-item" href="#">Another action</a></li>
-						<li><hr class="dropdown-divider"></li>
-						<li><a class="dropdown-item" href="#">Something else here</a></li>
-					</ul>
+					<a class="nav-link" href="#om_os">Om os</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link disabled">Disabled</a>
+					<a class="nav-link" href="#om_os">Koncerter</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#om_os">Videoer</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#om_os">Referencer</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#om_os">Kontakt</a>
 				</li>
 			</ul>
-			<button class="btn btn-primary" type="submit">Koncerter</button>
+			<button class="btn btn-primary text-white" type="submit">Koncerter</button>
 		</div>
 	</div>
 </nav>
@@ -88,8 +90,8 @@
 					</h1>
 					<p class="lead text-white">Lead tekst her</p>
 					<div>
-						<button type="button" class="btn btn-primary">Primary</button>
-						<button type="button" class="btn btn-secondary">Secondary</button>
+						<button type="button" class="btn btn-primary text-white">Koncerter</button>
+						<button type="button" class="btn btn-secondary text-white">Kontakt</button>
 					</div>
 
 				</div>
@@ -97,7 +99,7 @@
 		</div>
 
 		<!-- 3 bokse - Start -->
-		<div class="container">
+		<div class="container d-none d-md-block">
 			<div class="row">
 				<div class="col-md-4 mb-5 justify-content-center align-items-center text-center position-relative">
 					<div class="position-relative top-0 start-50 translate-middle">
@@ -125,7 +127,7 @@
 							<i class="btn-social bg-farve3 rounded-circle position-absolute top-0 start-50 translate-middle fa-regular fa-face-smile fa-2x text-white p-3" style="z-index: 2;"></i>
 							<h3 class="pt-5">
 								Glæde</h3>
-							<p class="lead px-3 pb-2">Vi ønsker at skabe glæde og nærvær<br>..fgfgfgf dfdgd ggdgd</p>
+							<p class="lead px-3 pb-2" id="om_os">Vi ønsker at skabe glæde og nærvær<br>..fgfgfgf dfdgd ggdgd</p>
 						</div>
 					</div>
 				</div>
@@ -134,103 +136,119 @@
 	</div>
 </div>
 
-<!-- Om os - Start -->
-<div class="container g-0">
-	<div class="row d-flex g-0">
-		<!-- Om os sektion 1- Start -->
-		<div class="col-lg-4 justify-content-center h-100">
-			<div class="bg-farve4 h-50">
-				<img src="images/mette.png" class="img-fluid" alt="Sangerinde Mette">
+<!-- Om os - Start2 -->
+<div class="container py-4">
+	<h2 class="text-center">Om os</h2>
+	<p class="text-center lead">Vores store passion er, at skabe glæde ved at synge og fortolke gamle klassiske sange og på den måde skabe et givende fællesskab.</p>
+</div>
+
+
+
+<div class="container py-3">
+	<div class="row shadow">
+		<div class="col-sm-12 col-md-6 col-lg-4 bg-farve4">
+			<div id="box1" class="h-100 w-100">
+				<img src="images/mette.png" alt="Billede 1" class="h-100 w-100 object-fit-cover">
 			</div>
-			<div class="text-center px-5 pt-3">
-				<h4 class="text-primary">Mette</h4>
-				<p class="text-uppercase">Sangerinde</p>
-			</div>
-			<!-- According Mette - Start -->
-			<div class="accordion px-5 pb-5" id="accordionExample">
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="headingOne">
-						<button class="accordion-button text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-							Om Mette
-						</button>
-					</h2>
-					<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-						<div class="accordion-body">
-							It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+		</div>
+		<div class="col-sm-12 col-md-6 col-lg-4 nodebaggrund2">
+			<div id="box2">
+				<div class="text-center px-5 pt-3">
+					<h4 class="text-primary">Mette</h4>
+					<p class="text-uppercase">Sangerinde</p>
+				</div>
+				<!-- According Mette - Start -->
+				<div class="accordion px-5 pb-5" id="accordionExample">
+					<div class="accordion-item shadow">
+						<h2 class="accordion-header" id="headingOne">
+							<button class="accordion-button text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								Om Mette
+							</button>
+						</h2>
+						<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables.
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="headingTwo">
-						<button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-							Baggrund
-						</button>
-					</h2>
-					<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-						<div class="accordion-body">
-							<strong>Baggrund</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+					<div class="accordion-item shadow">
+						<h2 class="accordion-header" id="headingTwo">
+							<button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								Baggrund
+							</button>
+						</h2>
+						<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<strong>Baggrund</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables.
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- Om os sektion 2- Start -->
-		<div class="col-lg-4">
-			<div class="text-center px-5 pt-3">
-				<h4 class="text-primary">Historie</h4>
-				<p class="text-uppercase"><strong>“VI ØNSKER AT LØFTE FOLKS GLÆDE,<br>med sang og fællesskab”</strong></p>
-			</div>
-			<!-- According Historie - Start -->
-			<div class="accordion px-5 pb-5" id="accordionExample2">
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="heading5">
-						<button class="accordion-button text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapseOne">
-							Vores Historie
-						</button>
-					</h2>
-					<div id="collapse5" class="accordion-collapse collapse show" aria-labelledby="heading5" data-bs-parent="#accordionExample2">
-						<div class="accordion-body">
-							It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="bg-farve4">
-				<img src="images/gruppe.png" class="img-fluid" alt="Fællessang">
+		<div class="col-sm-12 col-md-6 col-lg-4 bg-farve4">
+			<div id="box3" class="h-100 w-100">
+				<img src="images/Martin.png" alt="Billede 3" class="h-100 w-100 object-fit-cover">
 			</div>
 		</div>
-		<!-- Om os sektion 3- Start -->
-		<div class="col-lg-4">
-			<div class="bg-farve4">
-				<img src="images/Martin.png" class="img-fluid" alt="Pianist Martin">
-			</div>
-			<div class="text-center px-5 pt-3">
-				<h4 class="text-primary">Martin</h4>
-				<p class="text-uppercase">Pianist</p>
-			</div>
-			<!-- Accordings Martin - Start -->
-			<div class="accordion px-5 pb-5" id="accordionExample3">
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="heading3">
-						<button class="accordion-button text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapseOne">
-							Om Martin
-						</button>
-					</h2>
-					<div id="collapse3" class="accordion-collapse collapse show" aria-labelledby="heading3" data-bs-parent="#accordionExample3">
-						<div class="accordion-body">
-							It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+		<div class="col-sm-12 col-md-6 col-lg-4 nodebaggrund2">
+			<div id="box4">
+				<div class="text-center px-5 pt-3">
+					<h4 class="text-primary">Martin</h4>
+					<p class="text-uppercase">Pianist</p>
+				</div>
+				<!-- Accordings Martin - Start -->
+				<div class="accordion px-5 pb-5" id="accordionExample3">
+					<div class="accordion-item shadow">
+						<h2 class="accordion-header" id="heading3">
+							<button class="accordion-button text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapseOne">
+								Om Martin
+							</button>
+						</h2>
+						<div id="collapse3" class="accordion-collapse collapse show" aria-labelledby="heading3" data-bs-parent="#accordionExample3">
+							<div class="accordion-body">
+								It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item shadow">
+						<h2 class="accordion-header" id="heading4">
+							<button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapseTwo">
+								Baggrund
+							</button>
+						</h2>
+						<div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample3">
+							<div class="accordion-body">
+								<strong>Baggrund</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables.
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="heading4">
-						<button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapseTwo">
-							Baggrund
-						</button>
-					</h2>
-					<div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample3">
-						<div class="accordion-body">
-							<strong>Baggrund</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-6 col-lg-4 bg-farve4">
+			<div id="box5" class="h-100 w-100">
+				<img src="images/gruppe.png" alt="Billede 2" class="h-100 w-100 object-fit-cover">
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-6 col-lg-4 nodebaggrund2">
+			<div id="box6">
+				<div class="text-center px-5 pt-5">
+					<h4 class="text-primary">Historie</h4>
+					<p class="text-uppercase text-farve5"><strong>“VI ØNSKER AT LØFTE FOLKS GLÆDE,<br>med sang og fællesskab”</strong></p>
+				</div>
+				<!-- According Historie - Start -->
+				<div class="accordion px-5 pb-5" id="accordionExample2">
+					<div class="accordion-item shadow">
+						<h2 class="accordion-header" id="heading5">
+							<button class="accordion-button text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapseOne">
+								Vores Historie
+							</button>
+						</h2>
+						<div id="collapse5" class="accordion-collapse collapse show" aria-labelledby="heading5" data-bs-parent="#accordionExample2">
+							<div class="accordion-body">
+								It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+							</div>
 						</div>
 					</div>
 				</div>
@@ -238,6 +256,8 @@
 		</div>
 	</div>
 </div>
+
+
 
 
 
